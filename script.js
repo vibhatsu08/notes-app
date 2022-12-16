@@ -1,12 +1,13 @@
-// Create an empty object user
-const user = {
+// to calculate the sum of the salaries given in the object below in the variable "sum".
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
 }
-// Add the property name with the value John
-user.name = "John";
-// Add the property surname with the value Smith
-user.surname = "Smith";
-// Change the value of the name to Pete
-user.name = "Pete";
-// Remove the property name from the object
-delete user.name;
-console.log(user);
+
+let sum = 0;
+
+for (let salary in salaries) {
+    sum += salaries[salary];
+}
+console.log(sum);
